@@ -1,0 +1,31 @@
+Nodes:
+- routing_node (Entry Point)
+- correct_question
+- rephrase_question
+- split_question
+- kb_query_node
+- web_search_node
+- generate_answer
+- combine_results
+- image_processing_node
+- ocr_node
+- scienceqa_retriever_node
+- image_generation_node
+
+Edges:
+routing_node -> correct_question (text)
+routing_node -> image_processing_node (image)
+routing_node -> scienceqa_retriever_node (scientific)
+routing_node -> image_generation_node (image_generation)
+correct_question -> rephrase_question ()
+rephrase_question -> split_question ()
+split_question -> kb_query_node ()
+kb_query_node -> generate_answer (use_kb)
+kb_query_node -> web_search_node (use_web)
+web_search_node -> generate_answer ()
+generate_answer -> combine_results ()
+combine_results -> END ()
+image_processing_node -> ocr_node ()
+ocr_node -> correct_question ()
+scienceqa_retriever_node -> kb_query_node ()
+image_generation_node -> END ()
