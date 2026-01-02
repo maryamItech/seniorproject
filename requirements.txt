@@ -1,0 +1,64 @@
+streamlit>=1.28.0
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+langchain-ollama>=0.1.0
+langgraph>=0.0.20
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+numpy>=1.24.0
+pandas>=2.0.0
+pydantic>=2.0.0
+openai>=1.0.0
+torch>=2.0.0
+transformers>=4.36.0
+
+# HuggingFace datasets for ScienceQA image download
+datasets>=2.16.0
+
+# Image Processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# OCR (choose one or both)
+pytesseract>=0.3.10
+# paddleocr>=2.7.0  # Uncomment if using PaddleOCR
+
+# Web Search
+duckduckgo-search>=4.0.0
+requests>=2.31.0
+# tavily-python>=0.2.0  # Uncomment if using Tavily API
+
+# Progress bars
+tqdm>=4.66.0
+networkx>=3.1
+matplotlib>=3.8.0
+
+# Image Generation (optional - choose based on provider)
+# Stability AI uses requests (already included)
+
+# Additional utilities
+python-dotenv>=1.0.0  # For .env file support
+
+# Mistral AI for RAG Evaluation
+mistralai>=1.0.0
+
+# ============================================
+# IMPORTANT: Large Files Download Required
+# ============================================
+# 
+# Due to GitHub file size limits (>100 MB), you MUST manually download
+# the following large files and place them in the correct directories:
+#
+# 1. Visualized_base_en_v1.5.pth (374.66 MB)
+#    Location: ./Visualized_base_en_v1.5.pth
+#    This is a large model file required for the system.
+#
+# 2. embeddings/multimodal_embeddings.json (270.54 MB)
+#    Location: ./embeddings/multimodal_embeddings.json
+#    This file contains multimodal embeddings for search and retrieval.
+#
+# See SETUP.md for detailed download instructions.
+# ============================================
+
